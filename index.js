@@ -15,6 +15,7 @@ DBConnection();
 app.use("/", express.static(path.join(__dirname, "main")));
 app.use("/signup", express.static(path.join(__dirname, "static")));
 app.use("/catalog", express.static(path.join(__dirname, "public")));
+console.log(__dirname)
 
 //PORT
 const PORT = process.env.PORT || 5500;
